@@ -35,7 +35,7 @@ const questions = [
   {
     message: "What 3 characters would you like your SVG to display?\n",
     type: "input",
-    name: "logo",
+    name: "text",
     validate: function (input) {
       if (input.length > 3) {
         return "Only 3 characters should be used";
@@ -50,16 +50,6 @@ const questions = [
     type: "input",
     name: "textColor",
   },
-//   {
-//     message: "",
-//     type: "",
-//     name: "",
-//   },
-  //   {
-  //     message: "",
-  //     type:"",
-  //     name:""
-  //   },
 ];
 
 function init() {
