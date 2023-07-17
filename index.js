@@ -1,6 +1,6 @@
 const inquirer = require("inquirer");
-// const fs = require("fs");
-const {shapeHandler} = require("./lib/shapes");
+const fs = require("fs");
+const { shapeHandler } = require("./lib/shapes");
 const questions = [
   {
     message:
@@ -52,10 +52,17 @@ const questions = [
   },
 ];
 
+function writeToFile(data) {
+  fs.writeFile(`./examples/logo.svg`, shapeHandler(data), (err) =>
+    err ? console.log(err) : console.info("Generated logo.svg")
+  );
+}
+
 function init() {
-  inquirer.prompt(questions).then((data) => {
-        console.info(data);
-        console.info(shapeHandler(data));
+  inquirer
+  .prompt(questions)
+  .then((data) => {
+    writeToFile(data);
   });
 }
 
