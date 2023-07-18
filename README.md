@@ -23,7 +23,12 @@
   ## Usage
   Follow along with instructional video: https://drive.google.com/file/d/1m28pSoHz7KuhNqjZTCnBXqXXHY17drMO/view <br>or<br>
   While still in the SVG-Creator folder, after installing the necessary packages, run <br> ```node index.js``` <br> to invoke the init function and start the program. Simply answer all the provided questions with the instructions to get your SVG file created.<br>
-  ![node-index](./images/node-index.png)
+  ![node-index](./images/node-index.png) 
+  <br> Example SVGs: <br> 
+  ![triangle-svg](./examples/triangle.svg) <br>
+  ![square-svg](./examples/square.svg) <br>
+  ![circle-svg](./examples/circle.svg)
+
   ## Credits
   
   Inquirer NPM Package: https://www.npmjs.com/package/inquirer <br>
